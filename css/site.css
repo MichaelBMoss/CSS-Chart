@@ -28,7 +28,7 @@ body {
     color: var(--dark-blue);
 }
 
-.one-us-dollar {
+.OneUsDollar {
     position: absolute;
     left: 3%;
     bottom: 44.5%;
@@ -37,7 +37,7 @@ body {
 }
 
 
-.header {
+.Header {
     background-color: var(--light-grey);
     width: 100%;
     height: 11%;
@@ -47,12 +47,12 @@ body {
     align-items: center;
 }
 
-.header-content {
+.Header-content {
     margin-left: 7%;
     font-size: 31px;
 }
 
-.body-box1 {
+.BodyBox {
     height: 100%;
     width: 100%;
     display: flex;
@@ -63,7 +63,7 @@ body {
     background-color: #fbf0f0;
 }
 
-.graph {
+.BodyBox-graph {
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -76,14 +76,14 @@ body {
     border: 6px solid var(--dark-blue);
 }
 
-.graph-upper {
+.BodyBox-graph-upper {
     height: 40%;
     width: 100%;
     border-bottom: 4px dashed var(--light-blue);
     border-bottom: 4px dashed rgb(98, 82, 234, 0.25);
 }
 
-.graph-lower {
+.BodyBox-graph-lower {
     height: 60%;
     width: 100%;
     display: flex;
@@ -93,7 +93,7 @@ body {
     align-items: flex-end;
 }
 
-.barchart-bar {
+.BodyBox-graph-lower-bar {
     padding: 0px;
     transition: padding 1.5s;
     width: 13%;
@@ -104,19 +104,19 @@ body {
     border-right: 2px solid var(--dark-blue);
 }
 
-.barchart-bar:hover {
+.BodyBox-graph-lower-bar:hover {
     padding: 60px;
 }
 
-.invisible-text {
+.BodyBox-graph-lower-bar-invisibleText {
     opacity: 0;
     transition: opacity 2s;
 }
 
-.barchart-bar:hover .invisible-text{
+.BodyBox-graph-lower-bar:hover .BodyBox-graph-lower-bar-invisibleText{
     opacity:1; 
 }
 
-.barchart-bar:nth-child(even) {
+.BodyBox-graph-lower-bar:nth-child(even) {
     background-color: var(--medium-grey);
 }
