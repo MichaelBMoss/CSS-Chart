@@ -1,3 +1,4 @@
+/*Establishes variables for the various colors used.*/
 :root {
     --light-grey: #EDDFDF;
     --medium-grey: #dbc9c9;
@@ -6,12 +7,7 @@
     --dark-blue: #183661;
 }
 
-/*var(--light-grey);*/
-/*var(--medium-grey);*/
-/*var(--dark-grey);*/
-/*var(--light-blue);*/
-/*var(--dark-blue);*/
-
+/* Creates absolute positioning for the entire page body so that children can be given percentage based sizes. Establishes general font, font color and font size. Creates a flex box for the header and body. */
 body {
     position: absolute;
     height: 100%;
@@ -28,6 +24,7 @@ body {
     color: var(--dark-blue);
 }
 
+/* Inserts text to the left of the graph */
 .OneUsDollar {
     position: absolute;
     left: 3%;
@@ -36,7 +33,7 @@ body {
     text-align: center;
 }
 
-
+/*Creates the header.*/
 .Header {
     background-color: var(--light-grey);
     width: 100%;
@@ -47,11 +44,13 @@ body {
     align-items: center;
 }
 
+/*Inserts text on the header.*/
 .Header-content {
     margin-left: 7%;
     font-size: 31px;
 }
 
+/*Creates the page body.*/
 .BodyBox {
     height: 100%;
     width: 100%;
@@ -63,6 +62,7 @@ body {
     background-color: #fbf0f0;
 }
 
+/*Creates the graph box.*/
 .BodyBox-graph {
     border-radius: 25px;
     display: flex;
@@ -76,6 +76,7 @@ body {
     border: 6px solid var(--dark-blue);
 }
 
+/*Graph upper and graph lower split the graph into 2 parts so that bars of a currency value greater than 100% of a USD will not protrude beyond the top of the graph. A border-bottom on graph upper is used to create the dashed line indicating the value of 1 USD. */
 .BodyBox-graph-upper {
     height: 40%;
     width: 100%;
@@ -93,6 +94,7 @@ body {
     align-items: flex-end;
 }
 
+/*The bars are placed in graph lower. They have a padding transition.*/
 .BodyBox-graph-lower-bar {
     padding: 0px;
     transition: padding 1.5s;
@@ -104,19 +106,23 @@ body {
     border-right: 2px solid var(--dark-blue);
 }
 
+/*The bars grow in size on hover.*/
 .BodyBox-graph-lower-bar:hover {
     padding: 60px;
 }
 
+/*Invisible text is placed in each bar with opacity 0.*/
 .BodyBox-graph-lower-bar-invisibleText {
     opacity: 0;
     transition: opacity 2s;
 }
 
+/*Opacity transitions to 1 to make text visible on hover.*/
 .BodyBox-graph-lower-bar:hover .BodyBox-graph-lower-bar-invisibleText{
     opacity:1; 
 }
 
+/*Graph bars alternate color.*/
 .BodyBox-graph-lower-bar:nth-child(even) {
     background-color: var(--medium-grey);
 }

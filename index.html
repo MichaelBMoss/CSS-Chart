@@ -1,14 +1,17 @@
 <!doctype html>
 <html>
 
+<!--The css stylesheet and google font are linked-->
     <link rel="stylesheet" href="./css/site.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <head>
-      <title> 
+      <title>
+        Currencies in USD
       </title>
     </head>
     <body>
+<!--Text is inserted to the left of the graph.-->
         <p class="OneUsDollar">
             One <br> US <br> Dollar
         </p>        
@@ -17,11 +20,15 @@
                 Values Of Currencies In United States Dollars
             </div>
         </div>
+<!--BodyBox is the body of the page beneath the header.        -->
         <div class="BodyBox">
+<!--Graph is the graph box.-->
                 <div class="BodyBox-graph">
+<!--The graph box is split in 2.-->
                     <div class="BodyBox-graph-upper">
                     </div>
                     <div class="BodyBox-graph-lower">
+<!--Each bar in the graph is a div within graph-lower. When height is equal to the value fo the currency a bar is created representing that value. Onclick brings up an alert box indicating the value when the bar is clicked.-->
                         <div 
                             class="BodyBox-graph-lower-bar" 
                             style="height: 100%"
@@ -30,6 +37,7 @@
                             <p>
                                 USD
                             </p>
+<!--This text is invisible until the bar is hovered.-->
                             <p class="BodyBox-graph-lower-bar-invisibleText">
                                 1 USD is worth 1 US Dollar
                             </p>
